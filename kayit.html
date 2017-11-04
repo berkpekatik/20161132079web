@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Emlak Portalı</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+ <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/offcanvas.css"/>
+ 
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Emlak Portalı</a>
+        </div>
+		
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li class="active"><a href="kayit.html">Kayıt Ekleme</a></li>
+            <li><a href="#">Güncelleme</a></li>
+			<li><a href="#">Silme</a></li>
+			<li><a href="#">Sorgulama</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	<div class="container">
+	<div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">İlan Ekleme</h3>
+            </div>
+            <div class="panel-body">
+              <div class="form-group">
+				<label for="inputsm">İlan Başlığı</label>
+				<input class="form-control input-sm" id="inputsm" type="text">
+				<label for="inputsm">İlan Açıklaması</label>
+				<input class="form-control input-sm" id="editor" type="text">
+				<label  for="ex1">Fiyatı</label>
+				<input class="form-control input-sm" id="editor" type="text">
+				<label  for="ex1">Kaç m2</label>
+				<input class="form-control input-sm" id="editor" type="text">
+			</div>
+			<div class="page-header">
+			<h3>Resim Yükleme</h3>
+			</div>
+			<img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" style="width: 200px; height: 200px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzIwMHgyMDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWY4NjRhNDdmYyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1Zjg2NGE0N2ZjIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9Ijc0LjA1NDY4NzUiIHk9IjEwNC41Ij4yMDB4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+            <p><br>
+			<button type="button" class="btn btn-default">Resim Seç</button>
+			<button type="button" class="btn btn-success">Resmi Yükle</button>
+			<button type="button" class="btn btn-danger">Resmi Sil</button>
+			<div class="page-header">
+			</div>
+			<div class="col-lg-9">
+			</div>
+			<div class="col-lg-3">
+			<button type="button" class="btn btn-success">İlani Ekle</button>
+			<button type="button" class="btn btn-danger">İlani Sil</button>
+			</div>
+			</div>
+			
+          </div>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+	
