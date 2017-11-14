@@ -25,8 +25,8 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Anasayfa</a></li>
-            <li class="active"><a href="kayit.html">Kayıt Ekleme</a></li>
-            <li><a href="guncelle.html">Güncelleme</a></li>
+            <li><a href="kayit.html">Kayıt Ekleme</a></li>
+            <li class="active"><a href="guncelleme.html">Güncelleme</a></li>
 			<li><a href="#">Silme</a></li>
 			<li><a href="#">Sorgulama</a></li>
           </ul>
@@ -34,37 +34,40 @@
       </div>
     </nav>
 	<div class="container">
-	<div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">İlan Ekleme</h3>
-            </div>
-            <div class="panel-body">
-              <div class="form-group">
-				<label for="inputsm">İlan Başlığı</label>
-				<input class="form-control input-sm" id="inputsm" type="text">
-				<label for="inputsm">İlan Açıklaması</label>
-				<input class="form-control input-sm" id="editor" type="text">
-				<label  for="ex1">Fiyatı</label>
-				<input class="form-control input-sm" id="editor" type="text">
-				<label  for="ex1">Kaç m2</label>
-				<input class="form-control input-sm" id="editor" type="text">
-			</div>
-			<div class="page-header">
-			<h3>Resim Yükleme</h3>
-			</div>
-			<img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" style="width: 200px; height: 200px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzIwMHgyMDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWY4NjRhNDdmYyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1Zjg2NGE0N2ZjIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9Ijc0LjA1NDY4NzUiIHk9IjEwNC41Ij4yMDB4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
-            <p><br>
-			<button type="button" class="btn btn-default">Resim Seç</button>
-			<button type="button" class="btn btn-success">Resmi Yükle</button>
-			<button type="button" class="btn btn-danger">Resmi Sil</button>
-			<div class="page-header">
-			</div>
-			<div class="col-lg-9">
-			</div>
-			<div class="col-lg-3">
-			<button type="button" class="btn btn-success">İlani Ekle</button>
-			<button type="button" class="btn btn-danger">İlani Sil</button>
-			</div>
+	<table class="table">
+	<thead class="thead">
+	<tr>
+    <th>İlan Adı</th>
+	<th>İlan Açıklaması</th>
+	<th>Fiyatı</th>
+	<th>M2</th>
+	<th>Resmi</th>
+	</tr>
+	</thead>
+	<tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+	  <td>@twitter</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+	  <td>@twitter</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+	  <td>@twitter</td>
+    </tr>
+  </tbody>
+	</table>
 			</div>
 			
           </div>
