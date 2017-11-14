@@ -33,43 +33,48 @@
       </div>
     </nav>
 	<div class="container">
-	<div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">İlan Ekleme</h3>
-            </div>
-            <div class="panel-body">
+	
               <div class="form-group">
+			  <div class="col-lg-4">
 				<label for="inputsm">İlan Başlığı</label>
-				<input class="form-control input-sm" id="inputsm" type="text">
-				<label for="inputsm">İlan Açıklaması</label>
-				<textarea class="form-control " rows="5"  id="editor1"></textarea>
+				<input class="form-control input-sm" id="ilanId" type="text">	
+				</div>				
+				<div class="col-lg-4">
 				<label  for="ex1">Fiyatı</label>
-				<input class="form-control input-sm" id="editor2" type="text">
+				<input class="form-control input-sm" id="ilanFiyat" type="text">
+				</div>
+				<div class="col-lg-4">
 				<label  for="ex1">Kaç m2</label>
-				<input class="form-control input-sm" id="editor3" type="text">
-			</div>
-			<div class="page-header">
-			<h3>Resim Yükleme</h3>
-			</div>
+				<input class="form-control input-sm" id="ilanM2" type="text">
+				</div>
+				<div class="col-lg-12">
+				<label for="inputsm">İlan Açıklaması</label>
+				<textarea class="form-control " rows="5"  id="ilanAciklama"></textarea>
+					</div>	
+				<div class="col-md-12"><br>
 			<img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" style="width: 200px; height: 200px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzIwMHgyMDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWY4NjRhNDdmYyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1Zjg2NGE0N2ZjIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9Ijc0LjA1NDY4NzUiIHk9IjEwNC41Ij4yMDB4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
             <p><br>
-			<button type="button" class="btn btn-default">Resim Seç</button>
-			<button type="button" class="btn btn-success">Resmi Yükle</button>
-			<button type="button" class="btn btn-danger">Resmi Sil</button>
-			<div class="page-header">
+			<input type="file" id="exampleInputFile" class="btn btn-default">
 			</div>
-			<div class="col-lg-9">
-			</div>
+			<div class="col-lg-9"></div>
 			<div class="col-lg-3">
 			<button type="button" class="btn btn-success">İlani Ekle</button>
-			<button type="button" class="btn btn-danger">İlani Sil</button>
+			<button type="button" class="btn btn-danger ">İlani Sil</button>
 			</div>
 			</div>
-			
           </div>
 	</div>
+
+	</div>
+	
 	<script src="js/jquery-1.11.3.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
+ <script src="js/jquery-3.2.1.js"></script>
+ <script>
+ $(".sec").click(function() {
+            
+        });
+</script>
 </body>
 </html>
 	

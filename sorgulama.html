@@ -7,7 +7,7 @@
  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
  <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
   <link rel="stylesheet" type="text/css" href="css/offcanvas.css"/>
- 
+
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -33,17 +33,51 @@
       </div>
     </nav>
 	<div class="container">
-	<div class="col-lg-2">
-	<input type="text" class="form-control" placeholder="örn: Antalya Ev">
-	</div>
-	<div class="col-lg-2">
-	<button type="button" class="btn btn-default">Sorgula</button>		
-	</div>
-	<br>
-	<hr>
+	<div class="row">
+      <div class="col-md-12">
+        <div class="form-inline">
+          <input type="text" id="txtDeger" class="form-control" placeholder="örn: Antalya Ev">
+          <button id="btnListele" class="btn">Sorgula</button>
+        </div>
+        <hr>
+        <div id="resimler">
+
+        </div>
+      </div>
+    </div>
 	</div>
 	<script src="js/jquery-1.11.3.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
+ <script src="js/jquery-3.2.1.js"></script>
+ 
+ <script>
+    $(function () {
+
+      $("#btnListele").click(function () {
+
+        var deger = $("#txtDeger").val();
+        if (deger == "") {
+          alert("Bir Değer Giriniz!");
+          return false;
+        }
+
+        var url = 	"http://api.flickr.com/services/feeds/photos_public.gne?tags=" + deger + "&tagmode=any&format=json&jsoncallback=?";
+
+        $.getJSON(url, function (data) {
+          $("#resimler").empty();
+          $.each(data.items, function (i, kayit) {
+            if (i == 10) { return false; }
+            var img = "<img src='" + kayit.media.m + "'  class='img-thumbnail' title='" + kayit.title + "' style='width:100;height:100'>";
+            $("#resimler").append(img);
+
+          });
+
+        });
+
+      });
+
+    });
+	</script>
 </body>
 </html>
 	

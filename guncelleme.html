@@ -52,7 +52,7 @@
       <td>90</td>
 	  <td><img src="img/daire1.jpg" width="250" height="150"></img></td>
 	  <td><button type="button" class="btn btn-success">Düzenle</button>
-    <button type="button" class="btn btn-danger">Sil</button></td>
+    <button type="button" class="btn btn-danger sil">Sil</button></td>
     </tr>
     <tr>
       <th scope="row">Antakya Ev</th>
@@ -61,7 +61,7 @@
       <td>150</td>
 	  <td><img src="img/daire2.jpg" width="250" height="150"></img></td>
 	  <td><button type="button" class="btn btn-success">Düzenle</button>
-    <button type="button" class="btn btn-danger">Sil</button></td>
+    <button type="button" class="btn btn-danger sil">Sil</button></td>
     </tr>
     <tr>
       <th scope="row">Hatay Ev</th>
@@ -70,7 +70,7 @@
       <td>110</td>
 	  <td><img src="img/daire3.jpg" width="250" height="150"></img></td>
 	  <td><button type="button" class="btn btn-success">Düzenle</button>
-    <button type="button" class="btn btn-danger">Sil</button></td>
+    <button type="button" class="btn btn-danger sil">Sil</button></td>
     </tr>
 	<tr>
 	
@@ -83,6 +83,14 @@
 	</div>
 	<script src="js/jquery-1.11.3.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.2.1.js"></script>
+ <script>
+ $(document).on("click", ".sil", function () {
+        var satir = $(this).closest("tr");
+        satir.remove();
+		
+      });
+		</script>
 </body>
 </html>
 	
