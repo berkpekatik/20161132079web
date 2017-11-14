@@ -33,9 +33,12 @@
       </div>
     </nav>
 	<div class="container">
-	
-              <div class="form-group">
+	<div class="panel panel-primary">
+	<div class="panel-heading">İlan Ekleme</div>
+          <div class="panel-body">
+			<div class="form-group">
 			  <div class="col-lg-4">
+				
 				<label for="inputsm">İlan Başlığı</label>
 				<input class="form-control input-sm" id="ilanId" type="text">	
 				</div>				
@@ -58,22 +61,62 @@
 			</div>
 			<div class="col-lg-9"></div>
 			<div class="col-lg-3">
-			<button type="button" class="btn btn-success">İlani Ekle</button>
+			<button type="button" class="btn btn-success" id="ilanEkle">İlani Ekle</button>
 			<button type="button" class="btn btn-danger ">İlani Sil</button>
 			</div>
 			</div>
-          </div>
-	</div>
+			</div>
+			</div>
+			 <div class="col-md-8">
+        <h1>En Son Eklenenler</h1>
+        <table class="table table-hover" id="tbKayitlar">
+          <tr class="bg-info">
 
-	</div>
+            <td>İlan Adı</td>
+            <td>Açıklaması</td>
+            <td>Metre Karesi</td>
+            <td>Fiyati</td>
+			<td></td>
+          </tr>
+          <tr>
+
+            <td>Antalya Ev</td>
+            <td>2+1 güzel manzaralı dubleks ev</td>
+            <td>150</td>
+			<td>150.000 TL</td>
+            <td>
+              <button class="btn btn-danger sil">Sil</button>
+            </td>
+          </tr>
+         
+        </table>
+          </div>
+	
 	
 	<script src="js/jquery-1.11.3.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
  <script src="js/jquery-3.2.1.js"></script>
  <script>
- $(".sec").click(function() {
-            
-        });
+ $(function () {
+      $("#ilanEkle").click(function () {
+
+		var id = $("#ilanId").val();
+        var aciklama = $("#ilanAciklama").val();
+        var m2 = $("#ilanM2").val();
+        var fiyat = $("#ilanFiyat").val();
+	
+        if (id == "" || aciklama == "" || m2 == "" || fiyat == "") {
+          alert("Lütfen Tüm Alanları Doldurunuz!");
+          return false;
+        }
+
+        $("#tbKayitlar").append("<tr><td>" + id + "</td><td>" + aciklama + "</td><td>" + m2 + "</td><td>" + fiyat + "</td><td><button class='btn btn-danger sil'>Sil</button></td></tr>");
+      });
+		$(document).on("click", ".sil", function () {
+        var satir = $(this).closest("tr");
+        satir.remove();
+      });
+    });
 </script>
 </body>
 </html>
