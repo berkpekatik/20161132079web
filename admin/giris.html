@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Emlak Portalı</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+ <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
+ <link rel="stylesheet" type="text/css" href="../css/offcanvas.css"/>
+ <link rel="stylesheet" type="text/css" href="../css/giris.css"/>
+ 
+</head>
+<body>
+<div class="container">
+
+      <form class="form-signin">
+        <label for="inputUser" class="sr-only">Kullanıcı Adı</label>
+        <input type="username" id="inputUser" class="form-control" placeholder="Kullanıcı Adı" required="" autofocus="">
+        <label for="inputPassword" class="sr-only">Şifre</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Şifre" required="">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Beni Hatırla
+          </label>
+        </div>
+		<i><b><p>Kullanıcı Adı: admin<br> Şifre: 123</i></b></p>
+        <button id="girisYap" class="btn btn-lg btn-primary btn-block">Giriş Yap</button>
+		<br>
+		<div id="info"></div>
+      </div>
+      </form>
+		<hr>
+        
+    </div>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-3.2.1.js"></script>
+<script>
+$("#girisYap").click(function () {
+        var user = $("#inputUser").val();
+        var pass = $("#inputPassword").val();
+		if (user == "admin" && pass =="123") {
+         $("#info").fadeIn(1000);
+          $("#info").html("Giriş Yapılıyor");
+          $("#info").removeClass();
+          $("#info").addClass("alert alert-success");
+          $("#info").fadeOut(3000);
+		  $(location).attr('href', 'index.html')
+          return false;
+        }
+		else{
+		$("#info").fadeIn(1000);
+          $("#info").html("Kullanıcı Adı veya Şifre Yanlış");
+          $("#info").removeClass();
+          $("#info").addClass("alert alert-danger");
+          $("#info").fadeOut(3000);
+          return false;
+		}
+		
+
+		 });
+</script>
+</body>
+</html>
+	
